@@ -1,0 +1,22 @@
+footer {
+    background: #3FBFBF;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-wrapper {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-wrapper div {
+    flex: 1;
+}
+
+.footer-wrapper .right {
+    text-align: right;
+}

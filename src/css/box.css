@@ -1,0 +1,58 @@
+.box {
+  padding: 50px;
+  background:rgba(63,191,191,0.5);;
+  margin: 20px;
+  color: white;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.box h1 {
+  padding-bottom: 20px;
+  font-size: 36px;
+}
+
+.box p, .box ul {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.box ul {
+  padding-left: 30px;
+}
+
+.box a {
+  color: white;
+}
+
+.box .box-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.box .box-buttons a {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  background: #3FBFBF;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.box .box-buttons img {
+  max-width: 100%;
+}
+
+.box .box-buttons span {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  padding: 10px;
+  background: black;
+  opacity: 0.8;
+}

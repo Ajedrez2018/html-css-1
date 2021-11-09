@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Barra de navegación*/
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #3FBFBF;
+  position:fixed;
+  width: 100%;
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*ul principal*/
+nav>ul {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
+
+/*li principal*/
+nav>ul>li {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align:center;
+  font-size: 20px;
+  position: relative;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+nav>ul>li:hover {
+  background: white;
+  color: black;
+}
+
+
+/*Enlaces desde li principal*/
+nav a{
+  color: white;
+  text-decoration: none;
+}
+
+nav>ul>li:hover>a {
+  color: black;
+}
+
+nav>ul>li>ul>li:hover a {
+  color:black;
+}
+
+/*ul secundario*/
+nav>ul>li>ul {
+  display: none;
+  position: absolute;
+  top: 43px;
+  list-style: none;
+  width: 100%;
+  background: #3FBFBF;
+}
+
+
+
+nav>ul>li:hover>ul {
+  display: block;
+}
+
+nav>ul>li>ul>li {
+  padding: 10px;
+}
+
+nav>ul>li>ul>li:hover{
+  background: white;
+}
+
+nav .mobile-menu {
+  display: none;
+}
+
+
+@media (max-width: 576px) {
+  nav {
+    align-items: unset;
+  }
+  nav>ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav>ul>li {
+    width: 100%;
+    border-top: 1px solid white;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav>ul>li>ul>li {
+    padding: 0;
+  }
+
+  nav .mobile-menu {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .mobile-menu .menu-icon {
+    width: 48px;
+    
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.opened {
+    display: block;
+  }
+
+  nav>ul>li>ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    background: #3FBFBF;
+    width: 100%;
+    top: 0;
+    flex-direction: column;
+  }
+
+  nav>ul>li>ul>li {
+    border-top: 1px solid white;
+  }
+
+  nav a {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+  }
+}
+.inicio {
+  background-image: url(/522716_114562378732281_1055335040_n.4b8b750e.jpeg);
+}
+
+.presentacion {
+  background-image: url(/AJBARNA-cadires-bany-assistit_2018_710x379_1.902d5d34.jpeg);
+}
+
+.globos {
+  background-image: url("/globoaccesible.c2328482.jpeg"); 
+}
+
+.playas {
+  background-image: url("/A4A-playas-accesibles-guia-espana-1.ad3d48f4.jpeg");
+}
+
+.crucero {
+  background-image: url("/crucero.91f3e2ce.jpg"); 
+}
+.box {
+  padding: 50px;
+  background:rgba(63,191,191,0.5);;
+  margin: 20px;
+  color: white;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.box h1 {
+  padding-bottom: 20px;
+  font-size: 36px;
+}
+
+.box p, .box ul {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.box ul {
+  padding-left: 30px;
+}
+
+.box a {
+  color: white;
+}
+
+.box .box-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.box .box-buttons a {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  background: #3FBFBF;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.box .box-buttons img {
+  max-width: 100%;
+}
+
+.box .box-buttons span {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  padding: 10px;
+  background: black;
+  opacity: 0.8;
+}
+footer {
+    background: #3FBFBF;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-wrapper {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footer-wrapper div {
+    flex: 1;
+}
+
+.footer-wrapper .right {
+    text-align: right;
+}
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-centered {
+  align-items: center;
+  height: 100%;
+}
+
+h1{
+    text-align:center;
+    color: white;
+}
+
+
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
